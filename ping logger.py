@@ -133,18 +133,7 @@ async def on_connect():
 
 
 client.remove_command('help')
-@client.command()
-async def help(ctx):
- await ctx.message.delete()
- embed = discord.Embed(color=0x1f8b4c, timestamp=ctx.message.created_at)
- embed=discord.Embed(title="𝘴𝘩𝘢𝘮", color=0x000000)
- embed.set_thumbnail(url="https://media.discordapp.net/attachments/749509994944397313/769795615894405149/image0.gif?width=654&height=654")
- embed.add_field(name="𝙝𝙚𝙡𝙥 𝙘𝙢𝙙𝙨", value="𝙙𝙞𝙨𝙥𝙡𝙖𝙮𝙨 𝙩𝙝𝙚 𝙝𝙚𝙡𝙥 𝙤𝙥𝙩𝙞𝙤𝙣𝙨", inline=False)
- embed.add_field(name="𝙪𝙩𝙞𝙡 𝙘𝙢𝙙𝙨", value="𝙪𝙩𝙞𝙡𝙞𝙩𝙮 𝙨𝙝𝙞𝙩", inline=False)
- embed.add_field(name="𝙛𝙪𝙣 𝙘𝙢𝙙𝙨", value="𝙛𝙪𝙣 𝙨𝙝𝙞𝙩", inline=False)
- embed.add_field(name="𝙣𝙨𝙛𝙬 𝙘𝙢𝙙𝙨", value="𝙣𝙤𝙩 𝙛𝙤𝙧 𝙠𝙞𝙙𝙨 𝙡𝙤𝙡", inline=False)
- embed.add_field(name="𝙘𝙧𝙚𝙙𝙞𝙩𝙨", value="𝙜𝙞𝙫𝙚𝙨 𝙖𝙡𝙡 𝙘𝙧𝙚𝙙𝙞𝙩𝙨 𝙛𝙤𝙧 𝙘𝙧𝙚𝙖𝙩𝙤𝙧 𝙤𝙛 𝙩𝙝𝙞𝙨", inline=False)
- await ctx.send(embed=embed)
+
 
 
 
